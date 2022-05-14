@@ -19,7 +19,7 @@
         <div class="logo">
           <img src="assets/shared/logo.svg" alt="" />
         </div>
-        <div id='nav' class="nav-links">
+        <div id="nav" class="nav-links">
           <div id="lay" class="layer">
             <ul>
               <li>
@@ -49,47 +49,52 @@
 
       <div class="container-tech">
         <h2><span>03</span>SPACE LAUNCH 101</h2>
-        <div class="row-tech">      
-          <div class="left-col-tech">         
+        <div class="row-tech">
+          <div class="left-col-tech">
             <div class="left">
-              <a href="technology-vehicle.html"><h1><span>1</span></h1></a> 
-              <a href="technology-spaceport.html"><h1 class='current'><span>2</span></h1></a> 
-              <a href="technology-capsule.html"><h1><span>3</span></h1></a> 
-              
+              <a href="technology-vehicle.html"
+                ><h1><span>1</span></h1></a
+              >
+              <a href="technology-spaceport.html"
+                ><h1 class="current"><span>2</span></h1></a
+              >
+              <a href="technology-capsule.html"
+                ><h1><span>3</span></h1></a
+              >
             </div>
             <div class="right">
               <h3>THE TERMINOLOGY…</h3>
               <h1>SPACEPORT</h1>
-              <p>A spaceport or cosmodrome is a site for launching (or<br> receiving) spacecraft, by analogy to the seaport for ships<br> or airport for aircraft. Based in the famous Cape<br> Canaveral, our spaceport is ideally situated to take<br> advantage of the Earth’s rotation for launch.</p>
+              <p>
+                A spaceport or cosmodrome is a site for launching (or<br />
+                receiving) spacecraft, by analogy to the seaport for ships<br />
+                or airport for aircraft. Based in the famous Cape<br />
+                Canaveral, our spaceport is ideally situated to take<br />
+                advantage of the Earth’s rotation for launch.
+              </p>
             </div>
           </div>
           <div class="right-col-tech">
-            <img
-              src="/assets/technology/image-spaceport-portrait.jpg"
-              alt=""
-            />
+            <img src="assets/technology/image-spaceport-portrait.jpg" alt="" />
           </div>
         </div>
       </div>
     </section>
   </body>
   <script>
-
-    let state = document.getElementById('nav').style
-    let imgsrc = document.getElementById('menu-icon')
+    let state = document.getElementById('nav').style;
+    let imgsrc = document.getElementById('menu-icon');
     console.log(imgsrc);
-    
-    function menuOpen(){
+
+    function menuOpen() {
       console.log(state.left);
-      if (state.left == '100%'){
+      if (state.left == '100%') {
         state.left = '40%';
-        imgsrc.src = "assets/shared/icon-close.svg"
-      }
-      else{
+        imgsrc.src = 'assets/shared/icon-close.svg';
+      } else {
         state.left = '100%';
-        imgsrc.src = "assets/shared/icon-hamburger.svg"
+        imgsrc.src = 'assets/shared/icon-hamburger.svg';
       }
     }
-
   </script>
 </html>

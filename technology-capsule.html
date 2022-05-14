@@ -49,23 +49,35 @@
 
       <div class="container-tech">
         <h2><span>03</span>SPACE LAUNCH 101</h2>
-        <div class="row-tech">      
-          <div class="left-col-tech">         
+        <div class="row-tech">
+          <div class="left-col-tech">
             <div class="left">
-              <a href="technology-vehicle.html"><h1><span>1</span></h1></a> 
-              <a href="technology-spaceport.html"><h1><span>2</span></h1></a> 
-              <a href="technology-capsule.html"><h1 class='current'><span>3</span></h1></a> 
-              
+              <a href="technology-vehicle.html"
+                ><h1><span>1</span></h1></a
+              >
+              <a href="technology-spaceport.html"
+                ><h1><span>2</span></h1></a
+              >
+              <a href="technology-capsule.html"
+                ><h1 class="current"><span>3</span></h1></a
+              >
             </div>
             <div class="right">
               <h3>THE TERMINOLOGY…</h3>
               <h1>SPACE CAPSULE</h1>
-              <p>A space capsule is an often-crewed spacecraft that uses<br> a blunt-body reentry capsule to reenter the Earth's<br> atmosphere without wings. Our capsule is where you'll<br> spend your time during the flight. It includes a space<br> gym, cinema, and plenty of other activities to keep you<br> entertained.</p>
+              <p>
+                A space capsule is an often-crewed spacecraft that uses<br />
+                a blunt-body reentry capsule to reenter the Earth's<br />
+                atmosphere without wings. Our capsule is where you'll<br />
+                spend your time during the flight. It includes a space<br />
+                gym, cinema, and plenty of other activities to keep you<br />
+                entertained.
+              </p>
             </div>
           </div>
           <div class="right-col-tech">
             <img
-              src="/assets/technology/image-space-capsule-portrait.jpg"
+              src="assets/technology/image-space-capsule-portrait.jpg"
               alt=""
             />
           </div>
@@ -74,22 +86,19 @@
     </section>
   </body>
   <script>
-
-    let state = document.getElementById('nav').style
-    let imgsrc = document.getElementById('menu-icon')
+    let state = document.getElementById('nav').style;
+    let imgsrc = document.getElementById('menu-icon');
     console.log(imgsrc);
-    
-    function menuOpen(){
+
+    function menuOpen() {
       console.log(state.left);
-      if (state.left == '100%'){
+      if (state.left == '100%') {
         state.left = '40%';
-        imgsrc.src = "assets/shared/icon-close.svg"
-      }
-      else{
+        imgsrc.src = 'assets/shared/icon-close.svg';
+      } else {
         state.left = '100%';
-        imgsrc.src = "assets/shared/icon-hamburger.svg"
+        imgsrc.src = 'assets/shared/icon-hamburger.svg';
       }
     }
-
   </script>
 </html>

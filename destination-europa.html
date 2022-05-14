@@ -1,106 +1,113 @@
 <!DOCTYPE html>
 <html lang="en">
-<head>
-  <meta charset="UTF-8">
-  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
 
-  <link rel="icon" type="image/png" sizes="32x32" href="./assets/favicon-32x32.png">
-  <link rel="stylesheet" href="css/main.css">
-  <title>Frontend Mentor | Space tourism website</title>
-</head>
-<body>
-  <section class="destination">
-    <div class="navigation">
-      <div class="logo">
-        <img src="assets/shared/logo.svg" alt="" />
-      </div>
-      <div id="nav" class="nav-links">
-        <div id="lay" class="layer">
-          <ul>
-            <li>
-              <a href="index.html"><span>00</span> Home</a>
-            </li>
-            <li class='current'>
-              <a href="destination-moon.html"><span>01</span> Destination</a>
-            </li>
-            <li>
-              <a href="crew-commander.html"><span>02</span> Crew</a>
-            </li>
-            <li>
-              <a href="technology-vehicle.html"><span>03</span> Technology</a>
-            </li>
-          </ul>
+    <link
+      rel="icon"
+      type="image/png"
+      sizes="32x32"
+      href="./assets/favicon-32x32.png"
+    />
+    <link rel="stylesheet" href="css/main.css" />
+    <title>Frontend Mentor | Space tourism website</title>
+  </head>
+  <body>
+    <section class="destination">
+      <div class="navigation">
+        <div class="logo">
+          <img src="assets/shared/logo.svg" alt="" />
+        </div>
+        <div id="nav" class="nav-links">
+          <div id="lay" class="layer">
+            <ul>
+              <li>
+                <a href="index.html"><span>00</span> Home</a>
+              </li>
+              <li class="current">
+                <a href="destination-moon.html"><span>01</span> Destination</a>
+              </li>
+              <li>
+                <a href="crew-commander.html"><span>02</span> Crew</a>
+              </li>
+              <li>
+                <a href="technology-vehicle.html"><span>03</span> Technology</a>
+              </li>
+            </ul>
+          </div>
+        </div>
+        <div class="menu-open">
+          <img
+            id="menu-icon"
+            onclick="menuOpen()"
+            src="assets/shared/icon-hamburger.svg"
+            alt=""
+          />
         </div>
       </div>
-      <div class="menu-open">
-        <img
-          id="menu-icon"
-          onclick="menuOpen()"
-          src="assets/shared/icon-hamburger.svg"
-          alt=""
-        />
-      </div>
-    </div>
-  
-  <section class="container">
-    <div class="row">
-      <div class="col-left">
-        <h4><span>01</span>PICK YOUR DESTINATION</h4>
-        <div class="image-cont">
-          <img src="assets/destination/image-europa.png" alt="" />
-        </div>
-      </div>
-      <div class="col-right">
-        <div class="nav">
-          <ul>
-            <li ><a  href="destination-moon.html">MOON</a></li>
-            <li><a href="destination-mars.html">MARS</a></li>
-            <li class='current'><a href="destination-europa.html">EUROPE</a></li>
-            <li><a href="destination-titan.html">TITAN</a></li>
-          </ul>
-        </div>
-        <div class="dest-header">
-          <h2>EUROPE</h2>
-        </div>
-        <div class="para">
-          <p>
-            The smallest of the four Galilean moons orbiting Jupiter,<br> Europa is a winter lover’s dream. With an icy surface, it’s<br> perfect for a bit of ice skating, curling, hockey, or simple<br> relaxation in your snug wintery cabin.
-          </p>
-        </div>
-        <div class="lower-info">
-          <div class="row-2">
-            <div class="col1">
-              <h5>Avg Distance</h5>
-              <h3>628 MIL. KM</h3>
+
+      <section class="container">
+        <div class="row">
+          <div class="col-left">
+            <h4><span>01</span>PICK YOUR DESTINATION</h4>
+            <div class="image-cont">
+              <img src="assets/destination/image-europa.png" alt="" />
             </div>
-            <div class="col2">
-              <h5>Est. Travel Time</h5>
-              <h3>3 Years</h3>
+          </div>
+          <div class="col-right">
+            <div class="nav">
+              <ul>
+                <li><a href="destination-moon.html">MOON</a></li>
+                <li><a href="destination-mars.html">MARS</a></li>
+                <li class="current">
+                  <a href="destination-europa.html">EUROPE</a>
+                </li>
+                <li><a href="destination-titan.html">TITAN</a></li>
+              </ul>
+            </div>
+            <div class="dest-header">
+              <h2>EUROPE</h2>
+            </div>
+            <div class="para">
+              <p>
+                The smallest of the four Galilean moons orbiting Jupiter,<br />
+                Europa is a winter lover’s dream. With an icy surface, it’s<br />
+                perfect for a bit of ice skating, curling, hockey, or simple<br />
+                relaxation in your snug wintery cabin.
+              </p>
+            </div>
+            <div class="lower-info">
+              <div class="row-2">
+                <div class="col1">
+                  <h5>Avg Distance</h5>
+                  <h3>628 MIL. KM</h3>
+                </div>
+                <div class="col2">
+                  <h5>Est. Travel Time</h5>
+                  <h3>3 Years</h3>
+                </div>
+              </div>
             </div>
           </div>
         </div>
-      </div>
-    </div>
-  </section>
-</section>
-</body>
-<script>
+      </section>
+    </section>
+  </body>
+  <script>
+    let state = document.getElementById('nav').style;
+    let imgsrc = document.getElementById('menu-icon');
+    console.log(imgsrc);
 
-  let state = document.getElementById('nav').style
-  let imgsrc = document.getElementById('menu-icon')
-  console.log(imgsrc);
-  
-  function menuOpen(){
-    console.log(state.left);
-    if (state.left == '100%'){
-      state.left = '40%';
-      imgsrc.src = "assets/shared/icon-close.svg"
+    function menuOpen() {
+      console.log(state.left);
+      if (state.left == '100%') {
+        state.left = '40%';
+        imgsrc.src = 'assets/shared/icon-close.svg';
+      } else {
+        state.left = '100%';
+        imgsrc.src = 'assets/shared/icon-hamburger.svg';
+      }
     }
-    else{
-      state.left = '100%';
-      imgsrc.src = "assets/shared/icon-hamburger.svg"
-    }
-  }
-
-</script>
+  </script>
 </html>
