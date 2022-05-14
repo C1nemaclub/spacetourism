@@ -1,0 +1,83 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+
+    <link
+      rel="icon"
+      type="image/png"
+      sizes="32x32"
+      href="./assets/favicon-32x32.png"
+    />
+    <link rel="stylesheet" href="css/main.css" />
+    <title>Frontend Mentor | Space tourism website</title>
+  </head>
+  <body>
+    <section class="home">
+      <div class="navigation">
+        
+        <div class="logo">
+          <img src="assets/shared/logo.svg" alt="" />
+        </div>
+        <div  id='nav' class="nav-links">
+          
+          <div id='lay'class="layer">
+            
+            <ul>
+            <li class='current'><a href="index.html"><span>00</span> Home</a></li>
+            <li><a href="destination-moon.html"><span>01</span> Destination</a></li>
+            <li><a href="crew-commander.html"><span>02</span> Crew</a></li>
+            <li><a href="technology-vehicle.html"><span>03</span> Technology</a></li>
+             
+          </ul>
+        </div>
+        </div>
+        <div class="menu-open">
+          <img id='menu-icon'onclick='menuOpen()'src="assets/shared/icon-hamburger.svg" alt="">
+        </div>
+      </div>
+        <div class="row">
+          <div class="text-col">
+            <p class='so'>So, you want to travel to</p>
+            <h1>Space</h1>
+            <p class='p2'>
+              Let’s face it; if you want to go to space, you might as well<br>
+              genuinely go to outer space and not hover kind of on the<br> edge of
+              it. Well sit back, and relax because we’ll give you<br> a truly out of
+              this world experience!
+            </p>
+          </div>
+          <!----<div class="btn-col"><p>Explore</p>---------------------->
+          <div class="button-col">
+            <div class="button">
+              <a href="destination-moon.html"><button> Explore</button></a>
+          </div>
+          </div>
+
+          </div>
+        
+        </div>
+      
+    </section>
+  </body>
+  <script>
+
+    let state = document.getElementById('nav').style
+    let imgsrc = document.getElementById('menu-icon')
+    console.log(imgsrc);
+    
+    function menuOpen(){
+      console.log(state.left);
+      if (state.left == '100%'){
+        state.left = '40%';
+        imgsrc.src = "assets/shared/icon-close.svg"
+      }
+      else{
+        state.left = '100%';
+        imgsrc.src = "assets/shared/icon-hamburger.svg"
+      }
+    }
+
+  </script>
+</html>
